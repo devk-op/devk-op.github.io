@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kranthikumar Putta</title>
+<meta name="description" content="Kranthikumar Putta, independent researcher: on-device speech and embedded machine learning.">
+<style>
+  body { font: 17px/1.6 Georgia, "Times New Roman", serif; color: #1a1a1a; max-width: 760px; margin: 3rem auto; padding: 0 1.25rem; }
+  h1 { font-size: 1.9rem; margin: 0 0 .2rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; border-bottom: 1px solid #ddd; padding-bottom: .3rem; }
+  .sub { color: #555; margin: 0; }
+  .links a, .paper-links a { margin-right: 1.1rem; }
+  a { color: #0b5cad; text-decoration: none; } a:hover { text-decoration: underline; }
+  .paper-title { font-weight: bold; font-size: 1.08rem; }
+  .abstract { color: #333; }
+  pre { background: #f5f5f5; padding: .9rem; overflow-x: auto; font-size: .85rem; border-radius: 4px; }
+  footer { margin-top: 3rem; color: #888; font-size: .85rem; }
+</style>
+</head>
+<body>
+<h1>Kranthikumar Putta</h1>
+<p class="sub">Independent Researcher &middot; on-device speech and embedded machine learning</p>
+<p class="links"><a href="mailto:kdevprofile@gmail.com">kdevprofile@gmail.com</a><a href="https://github.com/devk-op">GitHub</a></p>
+
+<h2>Paper</h2>
+<p class="paper-title">Real-Time Speaker Verification on a Cortex-M4: Bit-Exact 8-Bit Deployment, Measured End to End</p>
+<p>Kranthikumar Putta. Preprint, 2026.</p>
+<p class="paper-links"><a href="tinyvoiceprint.pdf">PDF</a><a href="https://github.com/devk-op/TinyVoiceprint">Code (TinyVoiceprint)</a></p>
+<p class="abstract">Speaker verification on microcontrollers has, to our knowledge, so far lacked a system that enrols new voices on the device, runs in real time, and is competitive on a standard benchmark. We present TinyVoiceprint, a real-time, text-independent speaker verifier on an STM32F407 (Cortex-M4, 168 MHz) that enrols a new voice on the device and decides every 0.4 s from 1.5 s of audio from the board&#x27;s own microphone. A 139k-parameter time-channel-separable network runs in 8-bit integer arithmetic, with its convolutions bit-exact against a reference, and takes 293 ms per decision, with about 30 KB of network RAM, 151 KB of weights and 17.5 mJ above a 122 mW listening floor. On VoxCeleb1-O it reaches 7.98% EER over whole clips (17.7% from a single 1.5 s window), against 28.50% for the closest earlier microcontroller system on the same trials. Replaying the test set through the board shows that the remaining gap lies in the small model&#x27;s robustness to the acoustic channel, not in the microphone: a large teacher loses under one point, our network 4.6, and training with real noise and room echo cuts this to 3.3 at no extra cost. These results show that on-device enrolment and verification fit within a microcontroller&#x27;s budget, and identify channel robustness as the main target for closing the gap to larger models.</p>
+<details><summary>BibTeX</summary><pre>@misc{putta2026tinyvoiceprint,
+  author = {Kranthikumar Putta},
+  title  = {Real-Time Speaker Verification on a {Cortex-M4}: Bit-Exact 8-Bit Deployment, Measured End to End},
+  year   = {2026},
+  note   = {Preprint},
+  url    = {https://devk-op.github.io/tinyvoiceprint.pdf}
+}</pre></details>
+
+<footer>Last updated November 2026.</footer>
+</body>
+</html>
